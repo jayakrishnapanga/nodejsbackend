@@ -6,6 +6,13 @@ app.use(cors({
   origin: 'https://taxfiling-iyc9.vercel.app',
   origin: 'http://localhost:3000',
 }));
+
+
+app.get('/favicon.ico', (req, res) => {
+  // Send an empty response to ignore the request
+  res.status(204).end();
+});
+
 const port=process.env.PORT || 3000
 app.use(express.json({limit: "10mb", extended: true}))
 app.use(express.urlencoded({limit: "10mb", extended: true, parameterLimit: 50000}))
