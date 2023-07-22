@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Files</title>
+</head>
+<body>
+  <h1>User Files</h1>
+  <ul id="fileList">
+    <% files.forEach(file => { %>
+      <li>
+        <a href="/download/<%= file._id %>"><%= file.filename %> (Download)</a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>User Files</title>
+</head>
+<body>
+  <h1>User Files</h1>
+  <ul id="fileList">
+    <% files.forEach(file => { %>
+      <li>
+        <% if (file.aadharCard) { %>
+          Aadhar Card: <a href="/download/<%= file.aadharCard %>"><%= file.aadharCard %>download</a>
+        <% } %>
+        <% if (file.panCard) { %>
+          PAN Card: <a href="/download/<%= file.panCard %>"><%= file.panCard %></a>
+        <% } %>
+        <% if (file.formC) { %>
+          Form C: <a href="/download/<%= file.formC %>"><%= file.formC %></a>
+        <% } %>
+        <% if (file.formD) { %>
+          Form D: <a href="/download/<%= file.formD%>"><%= file.formD %></a>
+        <% } %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html> -->
+
+
+
+
+
+
